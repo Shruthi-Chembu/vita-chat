@@ -8,7 +8,7 @@ Notebook-first healthcare RAG project with chunking, FAISS retrieval, reranking,
 
 ## What This Repo Contains
 
-- `1_Chunking_GENAI_Project.ipynb`: document chunking and corpus creation
+- `1_Chunking.ipynb`: document chunking and corpus creation
 - `2-3_Embeddings_FAISS_till_reranking.ipynb`: embeddings, FAISS indexing, and retrieve-rerank pipeline
 - `4_Fine_Tuning_and_Evaluation.ipynb`: bi-encoder/reranker fine-tuning and retrieval evaluation
 - `llm_answer_synthesis.ipynb`: answer generation/synthesis experiments
