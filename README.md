@@ -8,16 +8,17 @@ Notebook-first healthcare RAG project with chunking, FAISS retrieval, reranking,
 
 ## What This Repo Contains
 
-- `1_Chunking.ipynb`: document chunking and corpus creation
-- `2-3_Embeddings_FAISS_till_reranking.ipynb`: embeddings, FAISS indexing, and retrieve-rerank pipeline
+- `1_Chunking_GENAI_Project.ipynb`: document chunking and corpus creation
+- `2-3_Embeddings_FAISS_MediQuery_till_reranking.ipynb`: embeddings, FAISS indexing, and retrieve-rerank pipeline
 - `4_Fine_Tuning_and_Evaluation.ipynb`: bi-encoder/reranker fine-tuning and retrieval evaluation
 - `llm_answer_synthesis.ipynb`: answer generation/synthesis experiments
 - `all_chunks.json`: chunk corpus used by retrieval
 - `faiss_index/`: FAISS artifacts and metadata
 - `backend/`: FastAPI API for retrieval + answer generation
 - `frontend/`: React + Vite web interface
+- `main.tex`: project report source
 
-## Workflow
+## Project Workflow
 
 1. Build structured chunks from Medicare source docs.
 2. Encode chunks with `BAAI/bge-base-en-v1.5`.
@@ -77,3 +78,6 @@ Example request:
 - If FAISS or sentence-transformers dependencies are unavailable, backend may fall back to lexical retrieval.
 - Fine-tuning notebooks are compute-heavy and are best run on a GPU runtime.
 
+## Team
+
+Built as part of the Generative AI course project (UT Austin MSBA).
