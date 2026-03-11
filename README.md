@@ -9,7 +9,7 @@ Notebook-first healthcare RAG project with chunking, FAISS retrieval, reranking,
 ## What This Repo Contains
 
 - `1_Chunking_GENAI_Project.ipynb`: document chunking and corpus creation
-- `2-3_Embeddings_FAISS_MediQuery_till_reranking.ipynb`: embeddings, FAISS indexing, and retrieve-rerank pipeline
+- `2-3_Embeddings_FAISS_till_reranking.ipynb`: embeddings, FAISS indexing, and retrieve-rerank pipeline
 - `4_Fine_Tuning_and_Evaluation.ipynb`: bi-encoder/reranker fine-tuning and retrieval evaluation
 - `llm_answer_synthesis.ipynb`: answer generation/synthesis experiments
 - `all_chunks.json`: chunk corpus used by retrieval
@@ -39,14 +39,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
-
-Optional environment variables:
-
-- `MEDIQUERY_CHUNKS_PATH`: path to `all_chunks.json`
-- `MEDIQUERY_ARTIFACT_DIR`: path to `faiss_index/`
-- `MEDIQUERY_USE_FINETUNED=true`: use `medicare_finetuned.index`
-- `MEDIQUERY_EMBED_MODEL`: query encoder (default `BAAI/bge-base-en-v1.5`)
-- `GEMINI_API_KEY`: enable Gemini-based grounded answer synthesis
 
 ### 2) Frontend
 
@@ -78,6 +70,3 @@ Example request:
 - If FAISS or sentence-transformers dependencies are unavailable, backend may fall back to lexical retrieval.
 - Fine-tuning notebooks are compute-heavy and are best run on a GPU runtime.
 
-## Team
-
-Built as part of the Generative AI course project (UT Austin MSBA).
