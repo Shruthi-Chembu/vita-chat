@@ -1,6 +1,6 @@
-# MediQuery-RAG
+# VitaChat
 
-MediQuery is an end-to-end Retrieval-Augmented Generation (RAG) system for Medicare policy question answering, built on CMS policy documents (NCD, LCD, and Medicare manuals).
+VitaChat is an end-to-end Retrieval-Augmented Generation (RAG) system for Medicare policy question answering, built on CMS policy documents (NCD, LCD, and Medicare manuals).
 
 ## Repository Description
 
